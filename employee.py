@@ -1,9 +1,13 @@
-def get_employee_details(name, emp_id, department, salary):
-    return (
+def employee_details(name, emp_id, department, salary):
+    result = (
         f"Employee Name   : {name}\n"
         f"Employee ID     : {emp_id}\n"
         f"Department      : {department}\n"
         f"Salary          : {salary}"
     )
 if __name__ == "__main__":
-    print(get_employee_details("Ravi", 101, "IT", 50000))
+    name="Alice"
+    emp_id="E1001"
+    department="IT"
+    salary=55000
+    print(employee_details(name,emp_id,department,salary))
